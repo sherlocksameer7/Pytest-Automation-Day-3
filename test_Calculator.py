@@ -2,8 +2,8 @@ import Calculator
 
 import pytest
 
-
-@pytest.mark.parametrize("a, b, c", [(3, 3, 6,), (4, 3, 7), (6, 8, 14), (7, 14, 21)])
+@pytest.mark.xfail
+@pytest.mark.parametrize("a, b, c", [(7, 3, 6,), (4, 3, 7), (5, 8, 14), (7, 14, 21)])
 def test_add_two_num(a, b, c):
 
     Res = Calculator.add_two_num(a, b)
@@ -18,7 +18,7 @@ def test_add_two_num(a, b, c):
 
 
 
-@pytest.mark.parametrize("a, b, c", [(-1, 7, -9), (3, 8, -2), (5, 10, -14)])
+@pytest.mark.parametrize("a, b, c", [(8, 13, -9), (3, 9, -2), (5, 10, -14)])
 def test_sub_two_num(a, b, c):
 
     Res = Calculator.sub_two_num(a, b)
@@ -33,7 +33,7 @@ def test_sub_two_num(a, b, c):
 
 
 
-@pytest.mark.parametrize("a, b, c", [(3, 6, -9), (7, 1, -3), (5, 11, 4)])
+@pytest.mark.parametrize("a, b, c", [(3, 14, -9), (8, 1, -3), (5, 12, 4)])
 def test_mul_two_num(a, b, c):
 
     Res = Calculator.mul_two_num(a, b)
@@ -47,7 +47,10 @@ def test_mul_two_num(a, b, c):
 
 
 
-@pytest.mark.parametrize("a, b, c", [(1, -17, 9), (2, 6, -12),(1, 8, 4)])
+
+@pytest.mark.parametrize("a, b, c", [(1, -16, 9), (2, 15, -12),(2, 8, 4)])
+@pytest.mark.muldiv
+@pytest.mark.skip(reason="No Need")
 def test_div_two_num(a, b, c):
 
     Res = Calculator.div_two_num(a, b)

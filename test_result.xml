@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="5" tests="13" time="0.292" timestamp="2022-03-29T12:16:09.649891" hostname="Sherlock-Brothers"><testcase classname="test_Calculator" name="test_add_two_num[7-3-6]" time="0.003"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculator" name="test_add_two_num[4-3-7]" time="0.003" /><testcase classname="test_Calculator" name="test_add_two_num[5-8-14]" time="0.002"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculator" name="test_add_two_num[7-14-21]" time="0.002" /><testcase classname="test_Calculator" name="test_sub_two_num[8-13--9]" time="0.003"><failure message="assert -5 == -9">a = 8, b = 13, c = -9
+
+    @pytest.mark.parametrize("a, b, c", [(8, 13, -9), (3, 9, -2), (5, 10, -14)])
+    def test_sub_two_num(a, b, c):
+    
+        Res = Calculator.sub_two_num(a, b)
+&gt;       assert Res == c
+E       assert -5 == -9
+
+test_Calculator.py:25: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_sub_two_num[3-9--2]" time="0.003"><failure message="assert -6 == -2">a = 3, b = 9, c = -2
+
+    @pytest.mark.parametrize("a, b, c", [(8, 13, -9), (3, 9, -2), (5, 10, -14)])
+    def test_sub_two_num(a, b, c):
+    
+        Res = Calculator.sub_two_num(a, b)
+&gt;       assert Res == c
+E       assert -6 == -2
+
+test_Calculator.py:25: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_sub_two_num[5-10--14]" time="0.002"><failure message="assert -5 == -14">a = 5, b = 10, c = -14
+
+    @pytest.mark.parametrize("a, b, c", [(8, 13, -9), (3, 9, -2), (5, 10, -14)])
+    def test_sub_two_num(a, b, c):
+    
+        Res = Calculator.sub_two_num(a, b)
+&gt;       assert Res == c
+E       assert -5 == -14
+
+test_Calculator.py:25: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_mul_two_num[3-14--9]" time="0.002"><failure message="assert 42 == -9">a = 3, b = 14, c = -9
+
+    @pytest.mark.parametrize("a, b, c", [(3, 14, -9), (8, 1, -3), (5, 12, 4)])
+    def test_mul_two_num(a, b, c):
+    
+        Res = Calculator.mul_two_num(a, b)
+&gt;       assert Res == c
+E       assert 42 == -9
+
+test_Calculator.py:40: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_mul_two_num[8-1--3]" time="0.003"><failure message="assert 8 == -3">a = 8, b = 1, c = -3
+
+    @pytest.mark.parametrize("a, b, c", [(3, 14, -9), (8, 1, -3), (5, 12, 4)])
+    def test_mul_two_num(a, b, c):
+    
+        Res = Calculator.mul_two_num(a, b)
+&gt;       assert Res == c
+E       assert 8 == -3
+
+test_Calculator.py:40: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_mul_two_num[5-12-4]" time="0.002"><failure message="assert 60 == 4">a = 5, b = 12, c = 4
+
+    @pytest.mark.parametrize("a, b, c", [(3, 14, -9), (8, 1, -3), (5, 12, 4)])
+    def test_mul_two_num(a, b, c):
+    
+        Res = Calculator.mul_two_num(a, b)
+&gt;       assert Res == c
+E       assert 60 == 4
+
+test_Calculator.py:40: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_div_two_num[1--16-9]" time="0.001"><skipped type="pytest.skip" message="No Need">C:\Users\sherl\PycharmProjects\Pytest Automation Day 3\test_Calculator.py:51: No Need</skipped></testcase><testcase classname="test_Calculator" name="test_div_two_num[2-15--12]" time="0.001"><skipped type="pytest.skip" message="No Need">C:\Users\sherl\PycharmProjects\Pytest Automation Day 3\test_Calculator.py:51: No Need</skipped></testcase><testcase classname="test_Calculator" name="test_div_two_num[2-8-4]" time="0.001"><skipped type="pytest.skip" message="No Need">C:\Users\sherl\PycharmProjects\Pytest Automation Day 3\test_Calculator.py:51: No Need</skipped></testcase></testsuite></testsuites>
